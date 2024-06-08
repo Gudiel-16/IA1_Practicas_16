@@ -1,0 +1,427 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1158,6993" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1168,6928" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="NewDT" />
+      <Variable x:TypeArguments="x:Boolean" Name="NextItem" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: The World's Largest Book Database - ISBN Database | ISBNdb" sap:VirtualizedContainerService.HintSize="1106,6840" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="bede1f56-b4c5-41e8-a0ce-7de20ab03128" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1072,6600" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="QueueItems" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="1010,6513" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+              <ueab:ExcelProcessScopeX.Body>
+                <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="976,6401" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="914,6316" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Data\Practica1_16.xlsx">
+                      <ueab:ExcelApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="880,6024" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="818,114" sap2010:WorkflowViewState.IdRef="Assign_2">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[NextItem]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="818,5825" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                              <ui:InterruptibleWhile.Body>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="784,5688" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="ui:QueueItem" Name="currentQueueItem" />
+                                    <Variable x:TypeArguments="x:String" Name="textDT" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="Practica1_16" sap:VirtualizedContainerService.HintSize="722,175" sap2010:WorkflowViewState.IdRef="GetQueueItems_3" QueueItemStates="New" QueueName="ISBNs_16" Result="[QueueItems]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:GetQueueItems>
+                                  <If Condition="[QueueItems.Count &lt; 1]" sap:VirtualizedContainerService.HintSize="722,5428" sap2010:WorkflowViewState.IdRef="If_5">
+                                    <If.Then>
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,312" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[NextItem]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="WriteLine_17" Text="EXIT!!!!" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="688,4955" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" FolderPath="Practica1_16" sap:VirtualizedContainerService.HintSize="626,175" sap2010:WorkflowViewState.IdRef="GetQueueItem_5" QueueType="ISBNs_16" TransactionItem="[currentQueueItem]" />
+                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="626,122" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="[currentQueueItem.SpecificContent(&quot;isbn&quot;).ToString]" />
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'The World's'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="626,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="bede1f56-b4c5-41e8-a0ce-7de20ab03128" Text="[currentQueueItem.SpecificContent(&quot;isbn&quot;).ToString]" Version="V3">
+                                          <uix:NTypeInto.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://isbndb.com/" CVScreenId="f3d431f9-1066-419a-8562-7a61edd1e35f" CvTextArea="292, 387, 154, 15" CvTextArgument="Search ISBN or Title" CvType="Text" DesignTimeRectangle="263, 414, 1073, 66" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='search_query' parentid='block-isbndbsearchblock' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search_query' parentid='block-isbndbsearchblock' tag='INPUT' type='text' class='search_query form-control' placeholder='Search ISBN or Title' aaname='' /&gt;" Guid="37daec41-a7cd-4d8d-80e6-02eef37a7509" InformativeScreenshot="fa532392c8a7180803e876cd44d6bc8c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The World&amp;apos;s Largest Book Database - ISBN Database | ISBNdb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="240, 324, 1120, 58" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white mb-12 mb-sm-10 mb-md-12' aaname='The World&amp;apos;s largest book database™ &amp;amp; ISBN API' check:innerText='The World&amp;apos;s largest book database™ &amp;amp; ISBN API' /&gt;" Guid="7bc341d4-9fb1-446f-865e-196ded19ebd7" SearchSteps="FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NTypeInto.Target>
+                                          <uix:NTypeInto.VerifyOptions>
+                                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            </uix:VerifyExecutionTypeIntoOptions>
+                                          </uix:NTypeInto.VerifyOptions>
+                                        </uix:NTypeInto>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON search-button'" sap:VirtualizedContainerService.HintSize="626,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bede1f56-b4c5-41e8-a0ce-7de20ab03128" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://isbndb.com/" DesignTimeRectangle="1268, 427, 38, 38" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='search-button' parentid='block-isbndbsearchblock' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search-button' parentid='block-isbndbsearchblock' tag='BUTTON' type='submit' class='search-button btn btn-default' aaname='' /&gt;" Guid="afd3e119-770b-4fc5-bdb4-e931987c724e" InformativeScreenshot="13f751391bb2fd99e62d30d60270419f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The World&amp;apos;s Largest Book Database - ISBN Database | ISBNdb' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="5a1cd99d-e955-4cca-952f-a76eb29af0a2" CvTextArea="257, 331, 1084, 42" CvTextArgument="The World's largest book database TM &amp; ISBN API" CvType="Text" DesignTimeRectangle="240, 324, 1120, 58" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-center text-white mb-12 mb-sm-10 mb-md-12' aaname='The World&amp;apos;s largest book database™ &amp;amp; ISBN API' check:innerText='The World&amp;apos;s largest book database™ &amp;amp; ISBN API' /&gt;" Guid="4fbcefd4-ddcd-4d5c-906e-b793ac2c4df7" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                        <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="626,122" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                                        <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Keys'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Values'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1 Url' ReferenceIdx='2' Name='Column-1 Url' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' name2='Column-1 Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="626,189" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="bede1f56-b4c5-41e8-a0ce-7de20ab03128" Version="V3">
+                                          <uix:NExtractData.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://isbndb.com/book/9780061120084" DesignTimeRectangle="510, 287, 279, 214" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="2768867e-993f-462d-ad44-9a94fbf31956" InformativeScreenshot="037611ba41b883e91392056fcda5a5d8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='| ISBNdb' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                                          </uix:NExtractData.Target>
+                                        </uix:NExtractData>
+                                        <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table as Text" sap:VirtualizedContainerService.HintSize="626,112" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[textDT]" />
+                                        <If Condition="[textDT.Contains(&quot;Full Title:&quot;) = True]" sap:VirtualizedContainerService.HintSize="626,3179" sap2010:WorkflowViewState.IdRef="If_7">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,2054" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If Condition="[textDT.Contains(&quot;List Price:&quot;) = True]" sap:VirtualizedContainerService.HintSize="530,1969" sap2010:WorkflowViewState.IdRef="If_6">
+                                                <If.Then>
+                                                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,904" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                                    <Sequence.Variables>
+                                                      <Variable x:TypeArguments="ui:QueueItem" Name="OutTransactionItem" />
+                                                    </Sequence.Variables>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="WriteLine_19" Text="Libro y precio existente" />
+                                                    <ui:BuildDataTable DataTable="[NewDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_7" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ISBN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Authors&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Result&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                                                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim newRow As DataRow = NewDT.NewRow()&#xA;&#xA;' Añadir isbn que viene en la cola&#xA;newRow(&quot;ISBN&quot;) = CurrentQueueItem&#xA;&#xA;For Each row As DataRow In ExtractDataTable.Rows&#xA;    Dim columnName As String = row(0).ToString().Trim()&#xA;    Dim columnValue As String = row(1).ToString().Trim()&#xA;    &#xA;    Select Case columnName&#xA;        Case &quot;Full Title:&quot;&#xA;            newRow(&quot;Title&quot;) = columnValue&#xA;        Case &quot;Authors:&quot;&#xA;            newRow(&quot;Authors&quot;) = columnValue            &#xA;    End Select&#xA;Next&#xA;&#xA;' Añadir precio en la penultima posicion&#xA;For Each row As DataRow In ExtractDataTable.Rows&#xA;    Dim columnName As String = row(0).ToString().Trim()&#xA;    Dim columnValue As String = row(1).ToString().Trim()&#xA;    &#xA;    Select Case columnName&#xA;        Case &quot;List Price:&quot;&#xA;            newRow(&quot;Price&quot;) = columnValue      &#xA;    End Select&#xA;Next&#xA;&#xA;' Añadir columna de encontrado&#xA;newRow(&quot;Result&quot;) = &quot;Encontrado&quot;&#xA;&#xA;' Añadir la nueva fila a la nueva DataTable&#xA;NewDT.Rows.Add(newRow)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="InvokeCode_7">
+                                                      <ui:InvokeCode.Arguments>
+                                                        <InArgument x:TypeArguments="sd:DataTable" x:Key="ExtractDataTable">[ExtractDataTable]</InArgument>
+                                                        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="NewDT">[NewDT]</InOutArgument>
+                                                        <InArgument x:TypeArguments="x:String" x:Key="CurrentQueueItem">[currentQueueItem.SpecificContent("isbn").ToString]</InArgument>
+                                                      </ui:InvokeCode.Arguments>
+                                                    </ui:InvokeCode>
+                                                    <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_11" IgnoreEmptySource="False" Source="[NewDT]" />
+                                                    <ui:SetTransactionStatus ContinueOnError="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="Practica1_16" sap:VirtualizedContainerService.HintSize="434,217" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_7" Status="Successful" TransactionItem="[currentQueueItem]">
+                                                      <ui:SetTransactionStatus.Analytics>
+                                                        <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                                                      </ui:SetTransactionStatus.Analytics>
+                                                      <ui:SetTransactionStatus.Output>
+                                                        <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                                                      </ui:SetTransactionStatus.Output>
+                                                    </ui:SetTransactionStatus>
+                                                  </Sequence>
+                                                </If.Then>
+                                                <If.Else>
+                                                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,904" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="WriteLine_20" Text="No existe precio de libro" />
+                                                    <ui:BuildDataTable DataTable="[NewDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_8" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ISBN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Authors&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Result&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                                                    <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim newRow As DataRow = NewDT.NewRow()&#xA;&#xA;' Añadir isbn que viene en la cola&#xA;newRow(&quot;ISBN&quot;) = CurrentQueueItem&#xA;&#xA;For Each row As DataRow In ExtractDataTable.Rows&#xA;    Dim columnName As String = row(0).ToString().Trim()&#xA;    Dim columnValue As String = row(1).ToString().Trim()&#xA;    &#xA;    Select Case columnName&#xA;        Case &quot;Full Title:&quot;&#xA;            newRow(&quot;Title&quot;) = columnValue&#xA;        Case &quot;Authors:&quot;&#xA;            newRow(&quot;Authors&quot;) = columnValue            &#xA;    End Select&#xA;Next&#xA;&#xA;' Añadir precio en la penultima posicion&#xA;newRow(&quot;Price&quot;) = &quot;No registrado&quot;&#xA;&#xA;' Añadir columna de encontrado&#xA;newRow(&quot;Result&quot;) = &quot;Encontrado&quot;&#xA;&#xA;' Añadir la nueva fila a la nueva DataTable&#xA;NewDT.Rows.Add(newRow)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="InvokeCode_8">
+                                                      <ui:InvokeCode.Arguments>
+                                                        <InArgument x:TypeArguments="sd:DataTable" x:Key="ExtractDataTable">[ExtractDataTable]</InArgument>
+                                                        <InOutArgument x:TypeArguments="sd:DataTable" x:Key="NewDT">[NewDT]</InOutArgument>
+                                                        <InArgument x:TypeArguments="x:String" x:Key="CurrentQueueItem">[currentQueueItem.SpecificContent("isbn").ToString]</InArgument>
+                                                      </ui:InvokeCode.Arguments>
+                                                    </ui:InvokeCode>
+                                                    <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_12" IgnoreEmptySource="False" Source="[NewDT]" />
+                                                    <ui:SetTransactionStatus ContinueOnError="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="Practica1_16" sap:VirtualizedContainerService.HintSize="434,217" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_8" Status="Successful" TransactionItem="[currentQueueItem]">
+                                                      <ui:SetTransactionStatus.Analytics>
+                                                        <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                                                      </ui:SetTransactionStatus.Analytics>
+                                                      <ui:SetTransactionStatus.Output>
+                                                        <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                                                      </ui:SetTransactionStatus.Output>
+                                                    </ui:SetTransactionStatus>
+                                                  </Sequence>
+                                                </If.Else>
+                                              </If>
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="496,955" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="WriteLine_21" Text="No existe libro" />
+                                              <ui:BuildDataTable DataTable="[NewDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_9" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;ISBN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Title&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Authors&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Price&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Result&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                                              <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim newRow As DataRow = NewDT.NewRow()&#xA;&#xA;' Añadir isbn que viene en la cola&#xA;newRow(&quot;ISBN&quot;) = CurrentQueueItem&#xA;newRow(&quot;Title&quot;) = &quot;&quot;&#xA;newRow(&quot;Authors&quot;) = &quot;&quot;&#xA;newRow(&quot;Price&quot;) = &quot;&quot;&#xA;newRow(&quot;Result&quot;) = &quot;Fallido&quot;&#xA;&#xA;' Añadir la nueva fila a la nueva DataTable&#xA;NewDT.Rows.Add(newRow)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="InvokeCode_9">
+                                                <ui:InvokeCode.Arguments>
+                                                  <InArgument x:TypeArguments="sd:DataTable" x:Key="ExtractDataTable">[ExtractDataTable]</InArgument>
+                                                  <InOutArgument x:TypeArguments="sd:DataTable" x:Key="NewDT">[NewDT]</InOutArgument>
+                                                  <InArgument x:TypeArguments="x:String" x:Key="CurrentQueueItem">[currentQueueItem.SpecificContent("isbn").ToString]</InArgument>
+                                                </ui:InvokeCode.Arguments>
+                                              </ui:InvokeCode>
+                                              <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="434,191" sap2010:WorkflowViewState.IdRef="WriteRangeX_13" IgnoreEmptySource="False" Source="[NewDT]" />
+                                              <ui:SetTransactionStatus ContinueOnError="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" FolderPath="Practica1_16" sap:VirtualizedContainerService.HintSize="434,268" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_9" Reason="No se encontro libro" Status="Failed" TransactionItem="[currentQueueItem]">
+                                                <ui:SetTransactionStatus.Analytics>
+                                                  <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                                                </ui:SetTransactionStatus.Analytics>
+                                                <ui:SetTransactionStatus.Output>
+                                                  <scg:Dictionary x:TypeArguments="x:String, InArgument" />
+                                                </ui:SetTransactionStatus.Output>
+                                              </ui:SetTransactionStatus>
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                        <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="626,122" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ISBN Database'" sap:VirtualizedContainerService.HintSize="626,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bede1f56-b4c5-41e8-a0ce-7de20ab03128" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://isbndb.com/book/9780142437223" CVScreenId="63bbcafc-818f-4380-984c-2947bb8874b7" CvTextArea="255, 133, 110, 30" CvTextArgument="ISBNDB" CvType="Text" DesignTimeRectangle="208, 124, 155, 48" DesignTimeScaleFactor="1" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='' aaname='Home' /&gt;" Guid="2d5c5598-8b85-4104-a601-52e667cab8ac" InformativeScreenshot="593555b4f8bfd07abee499b0bba41041.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='| ISBNdb' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="63bbcafc-818f-4380-984c-2947bb8874b7" CvTextArea="513, 140, 115, 15" CvTextArgument="ISBN Database" CvType="Text" DesignTimeRectangle="513, 136, 115, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='ISBN Database' css-selector='body&amp;gt;div&amp;gt;header&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;ul&amp;gt;li&amp;gt;a' parentid='main-menu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='ISBN Database' type='' parentid='main-menu' tag='A' class='' check:innerText='ISBN Database' /&gt;" Guid="a2c30f28-a787-45fa-9cd1-b1e32db52e56" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                        <Delay Duration="00:00:09" sap:VirtualizedContainerService.HintSize="626,113" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </ui:InterruptibleWhile.Body>
+                              <ui:InterruptibleWhile.Condition>
+                                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="NextItem = True" />
+                              </ui:InterruptibleWhile.Condition>
+                            </ui:InterruptibleWhile>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelApplicationCard.Body>
+                    </ueab:ExcelApplicationCard>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelProcessScopeX.Body>
+            </ueab:ExcelProcessScopeX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1608, -141, 1616, 1176" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ff2afc113ec9b9b8d15f95023fda8b75.jpg" Selector="&lt;html app='chrome.exe' title='The World&amp;apos;s Largest Book Database - ISBN Database | ISBNdb' /&gt;" Title="The World's Largest Book Database - ISBN Database | ISBNdb" Url="https://isbndb.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

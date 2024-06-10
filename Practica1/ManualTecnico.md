@@ -1,4 +1,14 @@
+# Practica 1: Biblioteca Central
+
 # Manual Tecnico
+
+# Introduccion
+
+El presente manual técnico detalla el desarrollo e implementación de un proceso automatizado para la Biblioteca Central de la Universidad San Carlos de Guatemala, utilizando la plataforma UiPath. Este proyecto, tiene como objetivo principal optimizar el registro y la gestión de los libros mediante la automatización del proceso de lectura y validación de los códigos ISBN.
+
+# Objetivo Principal
+
+Implementar los conocimientos adquiridos sobre la Automatización de Procesos Robóticos (RPA) en un entorno práctico, utilizando las herramientas disponibles en UiPath Studio y su Orquestador, para automatizar tareas repetitivas y laboriosas en la biblioteca.
 
 ## Conexcion al orquestador
 

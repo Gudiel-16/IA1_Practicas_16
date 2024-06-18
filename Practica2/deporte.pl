@@ -9,7 +9,7 @@ instancia_de(bolt, carrera_atletismo).
 instancia_de(dressel, libre_natacion).
 instancia_de(michael, espalda_natacion).
 instancia_de(thiago, mariposa_natacion).
-instancia_de(serena, tenis)
+instancia_de(serena, tenis).
 
 
 % Subclases de deportes
@@ -48,7 +48,7 @@ tiene_propiedad(futbol, se_juega_con, balon_esferico).
 tiene_propiedad(futbol, se_juega_con, botines_con_tacos).
 tiene_propiedad(futbol_playa, se_juega_en, playa).
 tiene_propiedad(futbol_campo, ha_ganado, champions_league).
-tiene_propiedad(futbol_bampo, ha_ganado, balon_oro).
+tiene_propiedad(futbol_campo, ha_ganado, balon_oro).
 tiene_propiedad(carrera_atletismo, ha_ganado, oro_olimpico).
 tiene_propiedad(carrera_atletismo, ha_ganado, record_mundial_100mts).
 

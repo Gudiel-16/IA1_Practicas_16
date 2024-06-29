@@ -1,5 +1,11 @@
 # Manual Tecnico
 
+## Introduccion
+
+Este manual técnico describe el proceso de desarrollo y configuración de una aplicación de realidad aumentada (AR) utilizando el componente Model Target de Vuforia. El objetivo de esta aplicación es identificar un objeto específico a través de la cámara de un dispositivo móvil, resaltar el objeto y señalar tres de sus partes distintivas. Este documento detalla los pasos necesarios para la configuración del entorno de desarrollo, la integración de Vuforia con Unity, la creación y entrenamiento del modelo 3D del objeto, y la generación del archivo APK ejecutable para su implementación en dispositivos móviles.
+
+El uso del componente Model Target de Vuforia permite el reconocimiento preciso de objetos tridimensionales, lo que es esencial para aplicaciones en sectores como la manufactura, educación, y marketing. La implementación exitosa de este proyecto demuestra competencias en el manejo de tecnologías AR y en el desarrollo de aplicaciones móviles interactivas.
+
 ## Instalacion de Unity
 
 * Ir al enlace y descargar: https://unity.com/products
@@ -31,6 +37,15 @@
     * Descargar el modelo en los siguientes formatos:
         * .fbx
         * .glb
+* Modelo descargado:
+    * Lamborghini Aventador Lowpoly Mobile game
+
+![Lambo](./images/01.png)
+![Lambo](./images/02.jpeg)
+
+* Modelo real:
+
+![Lambo](./images/03.jpeg)
 
 ## Crear Proyecto en Unity
 
@@ -63,6 +78,8 @@
     * Click en Train, para entrenar el objeto, puede tardar unos minutos.
     * Cuando termine, damos click en Export y guardamos en la ubicacion deseada.
 
+    ![Train](./images/04.jpeg)
+
 ## Configuracion de camara de realidad aumentada y licencia.
 
 * Al tener abierto el proyecto en Unity Editor:
@@ -81,6 +98,8 @@
                 * Damos un nombre, click en check y click en Confirm.
                 * Damos click en la licencia creada, nos mostrara un string, la copiamos.
                 * Vamos a Unity Editor, donde dice App License Key, pegamos el string.
+
+![Train](./images/05.jpeg)
 
 ## Configuracion de proyecto
 
@@ -111,6 +130,14 @@
 * Para agregar un texto, click en `+` luego en 3D Object `->` Text. (lo agregamos como hijo del ModelTarget)
     * Click en import TMP Essencials.
 
+![Train](./images/08.jpeg)
+
+![Train](./images/09.jpeg)
+
+![Train](./images/10.jpeg)
+
+![Train](./images/11.jpeg)
+
 ## Simulator de Unity Editor
 
 * Configuramos nuestro dispositivo:
@@ -123,7 +150,7 @@
     * Seleccionamos un dispositivo.
     * En la pare superior damos click en el icono de play.
     
-## Generar APK
+## Compilar para Android
 
 * Click en File `->` Build settings.
 * Click en Android.
@@ -136,3 +163,32 @@
         * Cerrar ventana.
 * Click en Build.
     * Seleccionamos lugar a guardar.
+
+## Compilar para IOS
+
+1. Abrir el proyecto en Unity.
+    * Vaya a File `->` Build Settings.
+    * Seleccione iOS como plataforma.
+    * Haga clic en Switch Platform.
+    * Configure las opciones de compilación según sus necesidades.
+    * Haga clic en Player Settings y complete los detalles de su aplicación.
+    * Haga clic en Build y elija una ubicación para guardar el proyecto exportado.
+    * Abrir el Proyecto en Xcode
+
+2. Navegue a la carpeta donde guardó el proyecto exportado desde Unity.
+    * Abra el archivo .xcworkspace generado con Xcode.
+    * Espere a que Xcode configure y cargue todos los archivos necesarios.
+    * Configurar el Proyecto en Xcode
+
+3. En Xcode: 
+    * Seleccione su proyecto en la barra lateral izquierda.
+    * Vaya a la pestaña General.
+    * Asegúrese de que la Bundle Identifier sea única y esté correctamente configurada.
+    * Seleccione su equipo de desarrollo de Apple en la sección Signing & Capabilities.
+    * Active las capacidades necesarias para su aplicación, como Camera y ARKit.
+
+## Pruebas
+
+![Test](./images/06.jpeg)
+
+![Test](./images/07.jpeg)
